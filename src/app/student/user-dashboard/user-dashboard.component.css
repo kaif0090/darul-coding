@@ -1,0 +1,13 @@
+.main {
+ 
+    height: 100%;
+    padding: 100px;
+    border-radius: 26px;
+    background: linear-gradient(225deg, #cacaca, #f0f0f0);
+   
+    max-width: 600px;
+}
+.box{
+    background-color: #000000;
+    padding: 20px;
+}

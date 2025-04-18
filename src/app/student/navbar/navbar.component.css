@@ -1,0 +1,9 @@
+.nav-link:hover{
+color: #f3768b;
+border-bottom:  2px solid #fa7e93;
+transition: 1s;
+}
+.nav-link{
+    color: white;
+    font-size: 20px;
+}

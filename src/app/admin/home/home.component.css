@@ -1,0 +1,311 @@
+.main{
+    background-color: #000000;
+    height: 100%;
+    background-image: url("https://img.freepik.com/premium-photo/dark-grey-black-slate-texture-with-high-resolution-natural-black-stone-wall-background_730620-289409.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.hero{
+  background-color:rgb(253, 127, 148) ;
+  color: black;
+}
+b{
+  color:rgb(238, 76, 103) ; 
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+}
+#box1{
+    width: 400px;
+    height: 400px;
+    background-color:rgb(238, 76, 103) ;
+    margin-top: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    
+}
+h1{
+    margin-top: 150px;
+}
+p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+strong{
+    color:rgb(238, 76, 103)  ;
+}
+img{
+    margin-top: -50px;
+}
+
+        .footer {
+            background: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 10px;
+        }
+        .footer h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: rgb(238, 76, 103) ;
+        }
+        .footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 10px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #f8b400;
+        }
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 12px;
+            border-top: 1px solid #444;
+            padding-top: 10px;
+        }
+        button{
+            width: 250px;
+            height: 60px;
+            margin-top: 40px;
+            color: white;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            background-color:  rgb(238, 76, 103);
+         
+        }
+        a{
+            text-decoration: none;
+           
+        }
+      
+
+    .slideInLeft {
+        -webkit-animation-name: slideInLeft;
+        animation-name: slideInLeft;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 50%;
+      }
+      @-webkit-keyframes slideInLeft {
+        0% {
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInLeft {
+        0% {
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+      .slideInRight {
+        -webkit-animation-name: slideInRight;
+        animation-name: slideInRight;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 50%;
+      }
+      @-webkit-keyframes slideInRight {
+        0% {
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInRight {
+        0% {
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+
+      
+      .box2{
+        height:100%;
+       width: 100%;
+       background-color: rgb(238, 76, 103);
+       margin-top: 40px;
+       
+
+      }
+
+      .slideInUp {
+        -webkit-animation-name: slideInUp;
+        animation-name: slideInUp;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes slideInUp {
+        0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+        }
+        100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        }
+        }
+        @keyframes slideInUp {
+        0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+        }
+        100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        }
+        } 
+        .card {
+          transition: transform 0.3s;
+        }
+        
+        .card:hover {
+          transform: scale(1.05);
+        }
+        
+        h2 {
+          animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #EE4C67;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(255,255,255,0); stroke: rgba(238,76,103,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(255,255,255,0); stroke: rgba(238,76,103,1); }
+	80%  {fill: rgba(255,255,255,0); stroke: rgba(238,76,103,1); stroke-width: 3; }
+	100% {
+		fill: rgba(255,255,255,1); stroke: rgba(238,76,103,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #ffffff00};
+
+#student{
+  height: 300px;
+  margin-top: 100px;
+  width: 300px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #000000;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(255,255,255,0); stroke: rgba(0,0,0,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(255,255,255,0); stroke: rgba(0,0,0,1); }
+	80%  {fill: rgba(255,255,255,0); stroke: rgba(0,0,0,1); stroke-width: 3; }
+	100% {
+		fill: rgba(255,255,255,1); stroke: rgba(0,0,0,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #ffffff00};
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #FF516E;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(255,255,255,0); stroke: rgba(255,81,110,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(255,255,255,0); stroke: rgba(255,81,110,1); }
+	80%  {fill: rgba(255,255,255,0); stroke: rgba(255,81,110,1); stroke-width: 3; }
+	100% {
+		fill: rgba(255,255,255,1); stroke: rgba(255,81,110,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #ffffff00};

@@ -1,0 +1,9 @@
+ .box{
+    background-image: url("https://t3.ftcdn.net/jpg/02/94/52/66/360_F_294526635_8Fc9IbBHWOC83JsiFNRNx5VivafEjiyi.jpg");
+    background-size: cover;
+    color: white;
+    padding: 50px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.808);
+
+ }

@@ -1,0 +1,47 @@
+
+<div *ngIf="course" id="main">
+    <div class="container-one p-3">
+      <img
+        [src]="course.img || course.img2"
+        alt="Course Image"
+        class="course-image"
+      />
+      
+      <div class="outer-cont flex mt-2">
+        <a [href]="course?.link">
+       <!-- From Uiverse.io by adamgiebl --> 
+  <button class="button w-100 text-center">
+    <div class="button-overlay"></div>
+    <span>Video <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 53 58" height="58" width="53">
+  <path stroke-width="9" stroke="currentColor" d="M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z"></path>
+  </svg></span>
+    
+  </button>
+      </a>
+      </div>
+      
+    </div>
+    <div class="container">  
+      <h1 class="course-heading">{{ course.heading }}</h1>
+      <h3 class="course-description">{{ course.def }}</h3>
+  
+      <div class="content-section">
+        <h4>Details:</h4>
+        <div [innerHTML]="course.contant" class="content"></div>
+        <div [innerHTML]="course.contant2" class="content"></div>
+        <div [innerHTML]="course.contant3" class="content"></div>
+      </div>
+  
+      <div class="examples-section">
+        <h4>Common  Tags:</h4>
+        <ul class="examples-list">
+          <li *ngFor="let example of course.examples">
+            <strong>{{ example.tag }}</strong
+            >: {{ example.description }} <br />
+            <code>{{ example.example }}</code>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
