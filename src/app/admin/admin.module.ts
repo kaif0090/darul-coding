@@ -6,7 +6,8 @@ import { CourseComponent } from './course/course.component';
 import { DynamicComponent } from './dynamic/dynamic.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CourseDashComponent } from './course-dash/course-dash.component';
 
 
 @NgModule({
@@ -16,10 +17,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     CourseComponent,
     DynamicComponent,
     ContactComponent,
-    NavbarComponent
+    NavbarComponent,
+    CourseDashComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     AdminRoutingModule,
     ReactiveFormsModule
   ]

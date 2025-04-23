@@ -1,38 +1,5 @@
 {
-    "students": [
-      {
-        "id": "e0ac",
-        "name": "kaif ali khan",
-        "email": "kingqadri04@gmail.com",
-        "message": "efdgdgsdfgsfsdf"
-      },
-      {
-        "id": "3646",
-        "name": "kaif",
-        "email": "dfdf@gmail.com",
-        "message": "aajdkfdkjvkkfvmkmfvf"
-      },
-      {
-        "id": "19f5",
-        "name": "kaif ali khan",
-        "email": "kingqadri04@gmail.com",
-        "message": "dfsdgfgdfgfgfgdfgfvfvf"
-      }
-    ],
-    "users": [
-      {
-        "id": 11,
-        "userId": 11,
-        "head": "HTML",
-        "status": "Completed"
-      },
-      {
-        "id": 12,
-        "userId": 12,
-        "head": "Angular",
-        "status": "In Progress"
-      }
-    ],
+    
     "html": [
       {
         "id": 1,

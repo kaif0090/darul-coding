@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CourseComponent } from './course/course.component';
 import { DynamicComponent } from './dynamic/dynamic.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CourseDashComponent } from './course-dash/course-dash.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
       {
         path: 'course/:id',
         component: DynamicComponent,
+      },
+      {
+        path:"course-dash",
+        component:CourseDashComponent
       },
 
       { path: '', redirectTo: 'home', pathMatch: 'full' },

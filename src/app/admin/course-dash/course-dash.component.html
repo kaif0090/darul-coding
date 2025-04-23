@@ -1,0 +1,33 @@
+<div class="container">
+  <h1 class="text-center m-3">Update Course Dashboard</h1>
+
+  <!-- Course Type Dropdown -->
+  <select class="form-select" id="courseType" [(ngModel)]="selectedCourseType" (change)="loadCourses()">
+    <option value="" disabled>Select a Course Type</option>
+    <option *ngFor="let type of courseTypes" [value]="type">{{ type | titlecase }}</option>
+  </select>
+
+  <!-- Course Selection Dropdown -->
+  <div *ngIf="courses.length > 0">
+    <select class="form-select" id="courseSelect" (change)="selectCourse($event)">
+      <option value="" disabled selected>Select Course</option>
+      <option *ngFor="let course of courses" [value]="course.id">{{ course.head }}</option>
+    </select>
+  </div>
+
+  <!-- Course Edit Form -->
+  <div *ngIf="selectedCourseId" class="form">
+    <h2>Edit Course</h2>
+    <input class="form-control mb-2" type="text" [(ngModel)]="courseData.head" placeholder="Course Title" />
+    <input class="form-control mb-2" type="text" [(ngModel)]="courseData.link" placeholder="Video Link" />
+    <input class="form-control mb-2" type="text" [(ngModel)]="courseData.img" placeholder="Image URL" />
+    <input class="form-control mb-2" type="text" [(ngModel)]="courseData.img2" placeholder="Second Image URL" />
+    <input class="form-control mb-2" type="text" [(ngModel)]="courseData.heading" placeholder="Heading" />
+    <textarea class="form-control mb-2" [(ngModel)]="courseData.def" placeholder="Definition"></textarea>
+    <textarea class="form-control mb-2" [(ngModel)]="courseData.contant" placeholder="Content"></textarea>
+    <textarea class="form-control mb-2" [(ngModel)]="courseData.contant2" placeholder="Content 2"></textarea>
+    <textarea class="form-control mb-2" [(ngModel)]="courseData.contant3" placeholder="Content 3"></textarea>
+
+    <button class="btn btn-warning btn-outline-dark w-100 mb-5" (click)="updateCourse()">Update Course</button>
+  </div>
+</div>
