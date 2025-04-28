@@ -13,7 +13,7 @@ export class SignupComponent implements OnInit {
   constructor(private fb: FormBuilder, private router: Router, private ngxService: NgxUiLoaderService) {}
 
   ngOnInit(): void {
-    this.signupForm = this.fb.group({
+    this.signupForm = this.fb.group({ 
       name: ['', Validators.required],
       password: ['', Validators.required],
       role: ['', Validators.required] // 'admin' or 'student'   
@@ -26,6 +26,7 @@ export class SignupComponent implements OnInit {
       localStorage.setItem('user', JSON.stringify(this.signupForm.value));
 
       const role = this.signupForm.value.role;
+      
       if (role === 'admin') {
         this.ngxService.stop();
         this.router.navigate(['/admin']);

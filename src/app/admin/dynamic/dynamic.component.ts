@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 @Component({
   selector: 'app-dynamic',
@@ -8,68 +9,33 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./dynamic.component.css']
 })
 export class DynamicComponent implements OnInit {
-  url: string = 'http://localhost:3000';
-  course: any;
+  url: string = 'http://localhost:3000/courses';
+  course: any = null;
 
-  constructor(private route: ActivatedRoute, private http: HttpClient) {}
+  constructor(
+    private route: ActivatedRoute,
+    private http: HttpClient,
+    private ngxService: NgxUiLoaderService
+  ) {}
 
   ngOnInit(): void {
     const courseId = this.route.snapshot.paramMap.get('id');
-    this.fetchCourseDetail(courseId);
-    
+    if (courseId) {
+      this.fetchCourseDetail(courseId);
+    }
   }
 
-  fetchCourseDetail(courseId: string | null) {
-    if (courseId) {
-      this.http.get<any[]>(`${this.url}/html`).subscribe((data) => {
-        this.course =
-          data.find((course) => course.id.toString() === courseId) || null;
-        if (!this.course) {
-          this.http.get<any[]>(`${this.url}/css`).subscribe((data) => {
-            this.course =
-              data.find((course) => course.id.toString() === courseId) || null;
-            if (!this.course) {
-              this.http.get<any[]>(`${this.url}/js`).subscribe((data) => {
-                this.course =
-                  data.find((course) => course.id.toString() === courseId) ||
-                  null;
-                if (!this.course) {
-                  this.http
-                    .get<any[]>(`${this.url}/angular`)
-                    .subscribe((data) => {
-                      this.course =
-                        data.find(
-                          (course) => course.id.toString() === courseId
-                        ) || null;
-                      if (!this.course) {
-                        this.http
-                          .get<any[]>(`${this.url}/react`)
-                          .subscribe((data) => {
-                            this.course =
-                              data.find(
-                                (course) => course.id.toString() === courseId
-                              ) || null;
-                            if (!this.course) {
-                              this.http
-                                .get<any[]>(`${this.url}/mongoDB`)
-                                .subscribe((data) => {
-                                  this.course =
-                                    data.find(
-                                      (course) =>
-                                        course.id.toString() === courseId
-                                    ) || null;
-                                  // Repeat for other categories...
-                                });
-                            }
-                          });
-                      }
-                    });
-                }
-              });
-            }
-          });
-        }
-      });
-    }
+  fetchCourseDetail(courseId: string) {
+    this.ngxService.start();
+    this.http.get<any[]>(this.url).subscribe(
+      (courses) => {
+        this.course = courses.find((c) => c.id.toString() === courseId) || null;
+        this.ngxService.stop();
+      },
+      (error) => {
+        console.error('Error fetching course detail:', error);
+        this.ngxService.stop();
+      }
+    );
   }
 }

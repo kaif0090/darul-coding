@@ -1,33 +1,178 @@
-<div class="container">
-  <h1 class="text-center m-3">Update Course Dashboard</h1>
+<div class="main">
+  <div class="container mt-5">
+    <div class="card shadow p-4">
+      <h2 class="text-center mb-4">Update Course</h2>
 
-  <!-- Course Type Dropdown -->
-  <select class="form-select" id="courseType" [(ngModel)]="selectedCourseType" (change)="loadCourses()">
-    <option value="" disabled>Select a Course Type</option>
-    <option *ngFor="let type of courseTypes" [value]="type">{{ type | titlecase }}</option>
-  </select>
+      <form (ngSubmit)="onUpdateCourse()">
+        <!-- Dropdown to select a course -->
+        <div class="mb-3">
+          <label for="courseId" class="form-label">Select Course:</label>
+          <select
+            id="courseId"
+            class="form-select"
+            [(ngModel)]="courseId"
+            name="courseId"
+            (change)="onCourseChange(courseId)"
+            required
+          >
+            <option value="">Select a course</option>
+            <option *ngFor="let course of courses" [value]="course.id">
+              {{ course.name }}
+            </option>
+          </select>
+        </div>
 
-  <!-- Course Selection Dropdown -->
-  <div *ngIf="courses.length > 0">
-    <select class="form-select" id="courseSelect" (change)="selectCourse($event)">
-      <option value="" disabled selected>Select Course</option>
-      <option *ngFor="let course of courses" [value]="course.id">{{ course.head }}</option>
-    </select>
-  </div>
+        <!-- Course Details Form Fields -->
+        <div class="mb-3">
+          <label for="img" class="form-label">Image URL:</label>
+          <input
+            id="img"
+            class="form-control"
+            [(ngModel)]="img"
+            name="img"
+            required
+          />
+        </div>
 
-  <!-- Course Edit Form -->
-  <div *ngIf="selectedCourseId" class="form">
-    <h2>Edit Course</h2>
-    <input class="form-control mb-2" type="text" [(ngModel)]="courseData.head" placeholder="Course Title" />
-    <input class="form-control mb-2" type="text" [(ngModel)]="courseData.link" placeholder="Video Link" />
-    <input class="form-control mb-2" type="text" [(ngModel)]="courseData.img" placeholder="Image URL" />
-    <input class="form-control mb-2" type="text" [(ngModel)]="courseData.img2" placeholder="Second Image URL" />
-    <input class="form-control mb-2" type="text" [(ngModel)]="courseData.heading" placeholder="Heading" />
-    <textarea class="form-control mb-2" [(ngModel)]="courseData.def" placeholder="Definition"></textarea>
-    <textarea class="form-control mb-2" [(ngModel)]="courseData.contant" placeholder="Content"></textarea>
-    <textarea class="form-control mb-2" [(ngModel)]="courseData.contant2" placeholder="Content 2"></textarea>
-    <textarea class="form-control mb-2" [(ngModel)]="courseData.contant3" placeholder="Content 3"></textarea>
+        <div class="mb-3">
+          <label for="name" class="form-label">Course Name:</label>
+          <input
+            id="name"
+            class="form-control"
+            [(ngModel)]="name"
+            name="name"
+            required
+          />
+        </div>
 
-    <button class="btn btn-warning btn-outline-dark w-100 mb-5" (click)="updateCourse()">Update Course</button>
+        <div class="mb-3">
+          <label for="description" class="form-label">Description:</label>
+          <textarea
+            id="description"
+            class="form-control"
+            rows="3"
+            [(ngModel)]="description"
+            name="description"
+            required
+          ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="level" class="form-label">Level:</label>
+          <input
+            id="level"
+            class="form-control"
+            [(ngModel)]="level"
+            name="level"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="definition" class="form-label">Definition:</label>
+          <textarea
+            id="definition"
+            class="form-control"
+            rows="3"
+            [(ngModel)]="definition"
+            name="definition"
+            required
+          ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="content" class="form-label">Content:</label>
+          <textarea
+            id="content"
+            class="form-control"
+            rows="3"
+            [(ngModel)]="content"
+            name="content"
+            required
+          ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="content2" class="form-label">Additional Content:</label>
+          <textarea
+            id="content2"
+            class="form-control"
+            rows="3"
+            [(ngModel)]="content2"
+            name="content2"
+            required
+          ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="content3" class="form-label">Further Content:</label>
+          <textarea
+            id="content3"
+            class="form-control"
+            rows="3"
+            [(ngModel)]="content3"
+            name="content3"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Examples form array (dynamically populated) -->
+        <div class="mb-4" *ngFor="let example of examples; let i = index">
+          <h5 class="mt-4 mb-3 text-primary">Example {{ i + 1 }}</h5>
+
+          <div class="mb-3">
+            <label for="exampleTag{{ i }}" class="form-label"
+              >Example Tag:</label
+            >
+            <input
+              id="exampleTag{{ i }}"
+              class="form-control"
+              [(ngModel)]="example.tag"
+              name="exampleTag{{ i }}"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleDescription{{ i }}" class="form-label"
+              >Example Description:</label
+            >
+            <textarea
+              id="exampleDescription{{ i }}"
+              class="form-control"
+              rows="2"
+              [(ngModel)]="example.description"
+              name="exampleDescription{{ i }}"
+              required
+            ></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleData{{ i }}" class="form-label"
+              >Example Data:</label
+            >
+            <input
+              id="exampleData{{ i }}"
+              class="form-control"
+              [(ngModel)]="example.data"
+              name="exampleData{{ i }}"
+              required
+            />
+          </div>
+
+          <hr />
+        </div>
+
+        <div class="d-grid">
+          <button
+            type="submit"
+            class="btn btn-warning btn-lg text-light"
+            [disabled]="!isValid()"
+          >
+            Update Course
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>

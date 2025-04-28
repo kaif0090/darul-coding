@@ -9,9 +9,10 @@ import { CourseComponent } from './course/course.component';
 import { DynamicComponent } from './dynamic/dynamic.component';
 import { ContactComponent } from './contact/contact.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
-import { ReactiveFormsModule} from '@angular/forms'
+import { FormsModule, ReactiveFormsModule} from '@angular/forms'
 import { ToastrModule } from 'ngx-toastr';
 import { AdmissionFormComponent } from './admission-form/admission-form.component';
+import { FilterPipeModule } from 'ngx-filter-pipe';
 
 
 
@@ -28,6 +29,8 @@ import { AdmissionFormComponent } from './admission-form/admission-form.componen
   ],
   imports: [
     CommonModule,
+    FilterPipeModule,
+    FormsModule,
     StudentRoutingModule,
     ReactiveFormsModule,
     ToastrModule.forRoot({

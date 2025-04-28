@@ -9,18 +9,22 @@ import { FormsModule} from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxUiLoaderModule, NgxUiLoaderHttpModule } from 'ngx-ui-loader';
+import { FilterPipeModule } from 'ngx-filter-pipe';
+import { LandingComponent } from './landing/landing.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
   
-    SignupComponent
+    SignupComponent,
+       LandingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    FilterPipeModule,
     ReactiveFormsModule,
     HttpClientModule,
     ToastrModule.forRoot({

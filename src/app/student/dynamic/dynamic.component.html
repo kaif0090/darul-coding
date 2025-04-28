@@ -1,11 +1,7 @@
 
-<div *ngIf="course" id="main">
+<div  *ngIf="course; else loadingOrNotFound"  id="main">
     <div class="container-one p-3">
-      <img
-        [src]="course.img || course.img2"
-        alt="Course Image"
-        class="course-image"
-      />
+      <img [src]="course.img" [alt]="course.name" class="course-image" />
       
       <div class="outer-cont flex mt-2">
         <a [href]="course?.link">
@@ -19,29 +15,45 @@
   </button>
       </a>
       </div>
-      
+       
     </div>
     <div class="container">  
-      <h1 class="course-heading">{{ course.heading }}</h1>
-      <h3 class="course-description">{{ course.def }}</h3>
+      <h2 class="course-title">{{ course.name }}</h2>
+      <p class="course-description">{{ course.description }}</p>
+      <p class="course-level">
+        <strong>Level:</strong> {{ course.level }}
+      </p>
   
       <div class="content-section">
         <h4>Details:</h4>
-        <div [innerHTML]="course.contant" class="content"></div>
-        <div [innerHTML]="course.contant2" class="content"></div>
-        <div [innerHTML]="course.contant3" class="content"></div>
+        <p class="course-definition">
+          <strong>Definition:</strong> {{ course.definition }}
+        </p>
+        <p class="course-content">
+          <strong>Content:</strong> {{ course.content }}
+        </p>
+        <p class="course-content2">
+          <strong>Additional Content:</strong> {{ course.content2 }}
+        </p>
+        <p class="course-content3">
+          <strong>Advanced Content:</strong> {{ course.content3 }}
+        </p>
       </div>
   
       <div class="examples-section">
         <h4>Common  Tags:</h4>
-        <ul class="examples-list">
+        <ul>
           <li *ngFor="let example of course.examples">
-            <strong>{{ example.tag }}</strong
-            >: {{ example.description }} <br />
+            <strong>{{ example.tag }}:</strong> 
+            <span>{{ example.description }}</span> <br />
             <code>{{ example.example }}</code>
           </li>
         </ul>
       </div>
     </div>
   </div>
-  
+  <ng-template #loadingOrNotFound>
+    <div class="not-found">
+      <h2>Loading or Course Not Found!</h2>
+    </div>
+  </ng-template>

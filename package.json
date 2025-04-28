@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "bootstrap": "^5.3.5",
+    "ngx-filter-pipe": "^3.0.1",
     "ngx-toastr": "^19.0.0",
     "ngx-ui-loader": "^13.0.0",
     "rxjs": "~7.8.0",

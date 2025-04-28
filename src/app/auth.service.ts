@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private baseUrl = 'http://localhost:3000';
+  private apiUrl = 'http://localhost:3000/courses';
   constructor(private http :HttpClient){};
   login(user: any) {
    
@@ -28,11 +28,11 @@ export class AuthService {
   isLoggedIn(): boolean {
     return !!localStorage.getItem('token');
   }
-  getCourse(courseName: string): Observable<any[]> {
-    return this.http.get<any[]>(`${this.baseUrl}/${courseName}`);
+  getCourses(): Observable<any> {
+    return this.http.get<any>(this.apiUrl);
   }
   updateCourse(courseType: string, id: number, courseData: any): Observable<any> {
-    return this.http.patch(`http://localhost:3000/${courseType}/${id}`, courseData);
+    return this.http.put(`http://localhost:3000/courses/${courseType}`, courseData);
   }
   
   

@@ -1,6 +1,6 @@
 .course-image {
     width: 100%;
-    height: auto;
+    height: 400px;
     object-fit: contain;
    align-items: center;
     border-radius: 8px;

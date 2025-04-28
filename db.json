@@ -1,249 +1,293 @@
 {
-    
-    "html": [
-      {
-        "id": 1,
-        "link": "https://youtu.be/HcOc7P5BMi4?si=zkEKb2Up4XFtuK3L",
-        "head": "HTML",
-        "img": "https://pixelmechanics.com.sg/wp-content/uploads/2019/06/html5-logo-for-web-development.png",
-        "img2": "https://strapi.dhiwise.com/uploads/Blog_Common_Image_HTML_OG_Image_53083794ac.png",
-        "heading": "HTML Introduction",
-        "def": "HTML (HyperText Markup Language) is a standard markup language to design the structure of a webpage. HTML is the combination of HyperText and Markup Language. HyperText defines the internal links between webpages, and Markup language defines the layout and presentation of text and media.",
-        "contant": "The p tag defines a paragraph, anything written inside <> and </> displays as a paragraph on the webpage. Use multiple p tags to display text in different paragraphs.",
-        "contant2": "HTML elements are represented by tags. Tags are enclosed in angle brackets. For example, h1 is a tag for the largest heading, while h6 is for the smallest heading.",
-        "contant3": "Common HTML tags include:br- a: Defines a hyperlink.br- img: Embeds an image.br- ul: Creates an unordered list.br- ol: Creates an ordered list.br- table: Defines a table.",
-        "examples": [
-          {
-            "tag": "<a>",
-            "description": "Defines a hyperlink.",
-            "example": "<a href='https://www.example.com'>Visit Example</a>"
-          },
-          {
-            "tag": "<img>",
-            "description": "Embeds an image.",
-            "example": "<img src='image.jpg' alt='Description of image'>"
-          },
-          {
-            "tag": "<ul>",
-            "description": "Creates an unordered list.",
-            "example": "<ul><li>Item 1</li><li>Item 2</li></ul>"
-          },
-          {
-            "tag": "<ol>",
-            "description": "Creates an ordered list.",
-            "example": "<ol><li>First item</li><li>Second item</li></ol>"
-          },
-          {
-            "tag": "<table>",
-            "description": "Defines a table.",
-            "example": "<table><tr><th>Header</th></tr><tr><td>Data</td></tr></table>"
-          }
-        ]
-      }
-    ],
-    "css": [
-      {
-        "id": 2,
-        "link": "https://youtu.be/ESnrn1kAD4E?si=dyIhKvel5mxEAA64",
-        "head": "CSS",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDzkG5MgCc-q3zFSNJztsxDc3NX3qkRUm0bDNaUQhkfnMgyBTpCrACe9iPK1vjh56SiEQ&usqp=CAU",
-        "img2": "",
-        "heading": "CSS Introduction",
-        "def": "CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS controls the layout of multiple web pages all at once.",
-        "contant": "CSS can be applied to HTML elements in three ways: inline, internal, and external styles.",
-        "contant2": "CSS properties include color, font-size, margin, padding, and many more.",
-        "contant3": "Common CSS selectors include:br- .class: Selects elements with a specific class.br- #id: Selects an element with a specific id.br- element: Selects all elements of a specific type.",
-        "examples": [
-          {
-            "tag": "color",
-            "description": "Sets the color of text.",
-            "example": "color: red;"
-          },
-          {
-            "tag": "font-size",
-            "description": "Sets the size of the font.",
-            "example": "font-size: 16px;"
-          },
-          {
-            "tag": "margin",
-            "description": "Sets the margin area on all four sides of an element.",
-            "example": "margin: 10px;"
-          },
-          {
-            "tag": "padding",
-            "description": "Sets the padding area on all four sides of an element.",
-            "example": "padding: 10px;"
-          },
-          {
-            "tag": "background-color",
-            "description": "Sets the background color of an element.",
-            "example": "background-color: blue;"
-          }
-        ]
-      }
-    ],
-    "js": [
-      {
-        "id": 3,
-        "link": "https://youtu.be/hKB-YGF14SY?si=j3g1XBFKkkuJisoY",
-        "head": "JavaScript",
-        "img": "https://exbsoft.com/Content/Images/Technologies/js.jpg",
-        "img2": "",
-        "heading": "JavaScript Introduction",
-        "def": "JavaScript is a high-level, dynamic, untyped, and interpreted programming language. It is a core technology of the World Wide Web, alongside HTML and CSS, and enables interactive web pages.",
-        "contant": "JavaScript can be used for client-side as well as server-side development. It allows you to implement complex features on web pages, such as interactive forms, animations, and dynamic content updates.",
-        "contant2": "JavaScript is an event-driven language, meaning it can respond to user actions like clicks, mouse movements, and keyboard input. It is also an object-oriented language, allowing for the creation of reusable code through objects.",
-        "contant3": "Common JavaScript features include:br- Variables: Used to store data values.br- Functions: Blocks of code designed to perform a particular task.br- Events: Code that runs when a specific event occurs.br- DOM Manipulation: Changing the document structure, style, and content.",
-        "examples": [
-          {
-            "tag": "Variables",
-            "description": "Used to store data values.",
-            "example": "let name = 'John';"
-          },
-          {
-            "tag": "Functions",
-            "description": "Blocks of code designed to perform a particular task.",
-            "example": "function greet() { return 'Hello, World!'; }"
-          },
-          {
-            "tag": "Events",
-            "description": "Code that runs when a specific event occurs.",
-            "example": "button.addEventListener('click', function() { alert('Button clicked!'); });"
-          },
-          {
-            "tag": "DOM Manipulation",
-            "description": "Changing the document structure, style, and content.",
-            "example": "document.getElementById('myElement').innerHTML = 'New Content';"
-          },
-          {
-            "tag": "Array",
-            "description": "Used to store multiple values in a single variable.",
-            "example": "let fruits = ['Apple', 'Banana', 'Cherry'];"
-          }
-        ]
-      }
-    ],
-    "angular": [
-      {
-        "id": 4,
-        "link": "https://youtu.be/0LhBvp8qpro?si=3n33J346FUX2_Evx",
-        "head": "Angular",
-        "img": "https://stream-blog-v2.imgix.net/blog/wp-content/uploads/f9547f9b9ba2dfa409118a00d2b7691d/Angular.png?auto=format&auto=compress",
-        "img2": "",
-        "heading": "Angular Introduction",
-        "def": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. It is developed and maintained by Google.",
-        "contant": "Angular provides a comprehensive solution for building web applications, including tools for routing, forms, HTTP client, and more. It uses a component-based architecture, allowing developers to create reusable UI components.",
-        "contant2": "Angular applications are built using TypeScript, a superset of JavaScript that adds static types. This helps in catching errors during development and improves code quality.",
-        "contant3": "Key features of Angular include:<br>- Two-way data binding: Synchronizes data between the model and the view.<br>- Dependency injection: A design pattern that allows for better code organization and testing.<br>- Directives: Special markers in the DOM that tell Angular to attach a specified behavior to that DOM element.",
-        "examples": [
-          {
-            "tag": "Component",
-            "description": "A building block of Angular applications.",
-            "example": "import { Component } from '@angular/core';<br>@Component({<br>  selector: 'app-root',<br>  templateUrl: './app.component.html',<br>  styleUrls: ['./app.component.css']<br>})<br>export class AppComponent { }"
-          },
-          {
-            "tag": "Service",
-            "description": "A class that provides a specific functionality.",
-            "example": "import { Injectable } from '@angular/core';<br>@Injectable({<br>  providedIn: 'root',<br>})<br>export class DataService { }"
-          },
-          {
-            "tag": "Directive",
-            "description": "A class that adds behavior to elements in Angular applications.",
-            "example": "import { Directive, ElementRef } from '@angular/core';<br>@Directive({<br>  selector: '[appHighlight]',<br>})<br>export class HighlightDirective { }"
-          },
-          {
-            "tag": "Pipe",
-            "description": "A way to transform data for display in templates.",
-            "example": "import { Pipe, PipeTransform } from '@angular/core';<br>@Pipe({<br>  name: 'customPipe'<br>})<br>export class CustomPipe implements PipeTransform { }"
-          },
-          {
-            "tag": "Routing",
-            "description": "Enables navigation between different views or components.",
-            "example": "import { NgModule } from '@angular/core';<br>import { RouterModule, Routes } from '@angular/router';<br>const routes: Routes = [<br>  { path: 'home', component: HomeComponent },<br>];<br>@NgModule({<br>  imports: [RouterModule.forRoot(routes)],<br>  exports: [RouterModule]<br>})<br>export class AppRoutingModule { }"
-          }
-        ]
-      }
-    ],
-    "react": [
-      {
-        "id": 5,
-        "link": "https://youtu.be/RGKi6LSPDLU?si=emB2KIGQtIXa0y5G",
-        "head": "React",
-        "img": "https://miro.medium.com/v2/resize:fit:1400/0*y6IcBe5J1AdALzXw.png",
-        "img2": "",
-        "heading": "React Introduction",
-        "def": "React is a JavaScript library for building user interfaces, developed and maintained by Facebook. It allows developers to create large web applications that can change data without reloading the page.",
-        "contant": "React uses a component-based architecture, where the UI is divided into reusable components. Each component has its own state and can be composed to create complex UIs.",
-        "contant2": "React utilizes a virtual DOM to optimize rendering performance. When the state of an object changes, React first changes the object in the virtual DOM, then it efficiently updates the real DOM.",
-        "contant3": "Key features of React include:<br>- JSX: A syntax extension that allows mixing HTML with JavaScript.<br>- Components: Independent and reusable bits of code that return a React element.<br>- Props: Short for properties, they are used to pass data from one component to another.",
-        "examples": [
-          {
-            "tag": "Component",
-            "description": "A building block of React applications.",
-            "example": "import React from 'react';<br>function MyComponent() {<br>  return <h1>Hello, World!</h1>;<br>}"
-          },
-          {
-            "tag": "JSX",
-            "description": "A syntax extension for JavaScript that looks similar to HTML.",
-            "example": "const element = <h1>Hello, World!</h1>;"
-          },
-          {
-            "tag": "State",
-            "description": "An object that determines how that component renders & behaves.",
-            "example": "const [count, setCount] = useState(0);"
-          },
-          {
-            "tag": "Props",
-            "description": "Short for properties, used to pass data to components.",
-            "example": "<MyComponent name='John' />"
-          },
-          {
-            "tag": "Event Handling",
-            "description": "Handling events in React components.",
-            "example": "<button onClick={() => alert('Clicked!')}>Click Me</button>"
-          }
-        ]
-      }
-    ],
-    "mongoDB": [
-      {
-        "id": 6,
-        "link": "https://youtu.be/J6mDkcqU_ZE?si=LvPTkuhQywWg9JxR",
-        "head": "MongoDB",
-        "img": "https://media.licdn.com/dms/image/v2/D4D12AQETgv5fMiYEXA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1677609185621?e=2147483647&v=beta&t=Ora_YKTAmDz3efeDirq2YQ7INd_unqaFZ13TheQc_60",
-        "img2": "",
-        "heading": "MongoDB Introduction",
-        "def": "MongoDB is a NoSQL database that uses a document-oriented data model. It is designed for scalability and flexibility, allowing developers to store and retrieve data in a more dynamic way compared to traditional relational databases.",
-        "contant": "MongoDB stores data in JSON-like documents, which makes it easy to work with and understand. Each document can have a different structure, allowing for a more flexible schema.",
-        "contant2": "MongoDB supports rich queries, indexing, and aggregation, making it suitable for a wide range of applications, from small projects to large-scale enterprise solutions.",
-        "contant3": "Key features of MongoDB include:<br>- Document-oriented storage: Data is stored in flexible, JSON-like documents.<br>- Scalability: Supports horizontal scaling through sharding.<br>- High availability: Provides replication and automatic failover.",
-        "examples": [
-          {
-            "tag": "Insert Document",
-            "description": "Inserting a new document into a collection.",
-            "example": "db.users.insertOne({ name: 'John', age: 30 });"
-          },
-          {
-            "tag": "Find Document",
-            "description": "Finding documents in a collection.",
-            "example": "db.users.find({ age: { $gt: 25 } });"
-          },
-          {
-            "tag": "Update Document",
-            "description": "Updating an existing document.",
-            "example": "db.users.updateOne({ name: 'John' }, { $set: { age: 31 } });"
-          },
-          {
-            "tag": "Delete Document",
-            "description": "Deleting a document from a collection.",
-            "example": "db.users.deleteOne({ name: 'John' });"
-          },
-          {
-            "tag": "Aggregation",
-            "description": "Using aggregation to process data.",
-            "example": "db.users.aggregate([{ $group: { _id: '$age', count: { $sum: 1 } } }]);"
-          }
-        ]
-      }
-    ]
-  }
+  "courses": [
+    {
+      "id": "1",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6935wo8bLZh5FeafJEffqWKDOpNpx6UE5bg&s",
+      "name": "HTML ",
+      "description": "Learn the basics of HTML5 for structuring web content.",
+      "level": "Beginner",
+      "definition": "HTML (HyperText Markup Language) is the standard language for creating webpages and web applications.",
+      "content": "HTML uses tags to structure documents, like <h1> for headings, <p> for paragraphs, and <a> for links.",
+      "content2": "It allows embedding images, videos, forms, and interactive content into web pages.",
+      "content3": "HTML5 introduces semantic elements like <article>, <section>, <header>, and better multimedia support.",
+      "examples": [
+        {
+          "tag": "<a>",
+          "description": "Defines a hyperlink.",
+          "example": "<a href='https://www.example.com'>Visit Example</a>"
+        },
+        {
+          "tag": "<img>",
+          "description": "Embeds an image.",
+          "example": "<img src='image.jpg' alt='Description'>"
+        },
+        {
+          "tag": "<ul>",
+          "description": "Creates an unordered list.",
+          "example": "<ul><li>Item 1</li><li>Item 2</li></ul>"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "img": "https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo-2011.png",
+      "name": "CSS",
+      "description": "Master CSS3 to style modern responsive websites and beautiful UI.",
+      "level": "Beginner",
+      "definition": "CSS (Cascading Style Sheets) is used to control the presentation, formatting, and layout of web pages.",
+      "content": "CSS styles HTML elements by applying properties like color, font-size, margins, and positioning.",
+      "content2": "CSS3 introduced animations, flexbox, grid layout, and responsive design features.",
+      "content3": "External stylesheets help keep the HTML structure clean and separate content from design.",
+      "examples": [
+        {
+          "tag": "color",
+          "description": "Sets the text color.",
+          "example": "p { color: red; }"
+        },
+        {
+          "tag": "flexbox",
+          "description": "Layout system for responsive design.",
+          "example": "display: flex;"
+        },
+        {
+          "tag": "media queries",
+          "description": "Apply styles based on screen size.",
+          "example": "@media (max-width: 600px) { body { font-size: 14px; } }"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "img": "https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png",
+      "link": "https://youtu.be/hKB-YGF14SY?si=BXuOagsVocN9HyUz",
+      "name": "JavaScript",
+      "description": "Understand JavaScript fundamentals and dynamic web development.",
+      "level": "Intermediate",
+      "definition": "JavaScript is a scripting language that enables interactive web pages and dynamic web applications.",
+      "content": "It can manipulate HTML and CSS, respond to user actions, and communicate with servers.",
+      "content2": "Popular for form validation, dynamic content updates, animations, and real-time data handling.",
+      "content3": "Modern JavaScript uses ES6+ features like arrow functions, promises, and async/await.",
+      "examples": [
+        {
+          "tag": "alert",
+          "description": "Displays a popup alert.",
+          "example": "alert('Hello World!');"
+        },
+        {
+          "tag": "function",
+          "description": "Defines reusable blocks of code.",
+          "example": "function greet() { console.log('Hi'); }"
+        },
+        {
+          "tag": "document.querySelector",
+          "description": "Selects DOM elements.",
+          "example": "document.querySelector('h1').style.color = 'blue';"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "img": "https://cdn.worldvectorlogo.com/logos/react-native-1.svg",
+      "link": "https://youtu.be/E6tAtRi82QY?si=9BXR-PPwYbhuWYeN",
+      "name": "React js",
+      "description": "Build powerful user interfaces using React.js it is java script library.",
+      "level": "Intermediate",
+      "definition": "React is a JavaScript library for building fast, interactive user interfaces using a component-based architecture.",
+      "content": "Uses JSX syntax to combine HTML and JavaScript logic in one file.",
+      "content2": "React components manage their own state and can be reused across applications.",
+      "content3": "React uses a virtual DOM to optimize rendering performance.",
+      "examples": [
+        {
+          "tag": "Component",
+          "description": "Basic React component.",
+          "example": "function Welcome() { return <h1>Hello World</h1>; }"
+        },
+        {
+          "tag": "State",
+          "description": "Manage local data inside a component.",
+          "example": "const [count, setCount] = useState(0);"
+        },
+        {
+          "tag": "Props",
+          "description": "Pass data to components.",
+          "example": "<Greeting name='John' />",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
+      "link": "https://youtu.be/oUmVFHlwZsI?si=EAZPp5pUNH9WKbzl",
+      "name": "Angular",
+      "description": "Develop dynamic single-page applications using Angular.",
+      "level": "Advanced",
+      "definition": "Angular is a TypeScript-based framework for building scalable single-page web applications.",
+      "content": "It uses a component-based architecture and powerful templating with two-way data binding.",
+      "content2": "Includes built-in support for routing, forms, HTTP requests, and dependency injection.",
+      "content3": "Angular CLI simplifies development by generating components, services, and modules.",
+      "examples": [
+        {
+          "tag": "Component",
+          "description": "Defines a new component.",
+          "example": "@Component({ selector: 'app-root', templateUrl: './app.component.html' })"
+        },
+        {
+          "tag": "ngFor",
+          "description": "Loop over a list in templates.",
+          "example": "<li *ngFor='let item of items'>{{item}}</li>"
+        },
+        {
+          "tag": "Service",
+          "description": "Share data and logic across components.",
+          "example": "@Injectable({ providedIn: 'root' })"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "img": "https://www.svgrepo.com/download/303360/nodejs-logo.svg",
+      "link": "https://youtu.be/BLl32FvcdVM?si=BYe6V80wYP3s5HKE",
+      "name": "Node.js",
+      "description": "Server-side programming using Node.js and Express it is java script libarary.",
+      "level": "Intermediate",
+      "definition": "Node.js is a JavaScript runtime built on Chrome's V8 engine, used to create scalable server-side applications.",
+      "content": "Allows running JavaScript code outside the browser, typically on servers.",
+      "content2": "Commonly used with Express.js to build REST APIs and backend services.",
+      "content3": "Supports asynchronous programming using callbacks, promises, and async/await.",
+      "examples": [
+        {
+          "tag": "require",
+          "description": "Import modules in Node.js.",
+          "example": "const express = require('express');"
+        },
+        {
+          "tag": "app.get",
+          "description": "Define a route.",
+          "example": "app.get('/', (req, res) => res.send('Hello World'));"
+        },
+        {
+          "tag": "listen",
+          "description": "Start the server.",
+          "example": "app.listen(3000);"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/0/00/Mongodb.png",
+      "link": "https://youtu.be/J6mDkcqU_ZE?si=y5pvAh8kv0tZ8MVv",
+      "name": "MongoDB",
+      "description": "Learn NoSQL database design with MongoDB its manage data backend.",
+      "level": "Intermediate",
+      "definition": "MongoDB is a NoSQL database that stores data in flexible, JSON-like documents.",
+      "content": "It allows dynamic schemas, making it highly scalable and developer-friendly.",
+      "content2": "Common operations: inserting, updating, deleting, and querying documents.",
+      "content3": "Mongoose is often used in Node.js apps to model MongoDB data.",
+      "examples": [
+        {
+          "tag": "insertOne",
+          "description": "Insert a document.",
+          "example": "db.collection('users').insertOne({name: 'John'});"
+        },
+        {
+          "tag": "find",
+          "description": "Query documents.",
+          "example": "db.collection('users').find({name: 'John'});"
+        },
+        {
+          "tag": "updateOne",
+          "description": "Update a document.",
+          "example": "db.collection('users').updateOne({name: 'John'}, {$set: {age: 30}});"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "img": "https://cdn.freelogovectors.net/wp-content/uploads/2023/09/python_logo-01-freelogovectors.net_.png",
+      "link": "https://youtu.be/UrsmFxEIp5k?si=YVhgx_2Kz11LL5E2",
+      "name": "Python",
+      "description": "Intro to Python programming for backend and scripting.",
+      "level": "Beginner",
+      "definition": "Python is a popular, beginner-friendly programming language known for its simplicity and versatility.",
+      "content": "Commonly used for web development, data science, AI, and automation.",
+      "content2": "Python uses indentation to define code blocks, promoting clean code.",
+      "content3": "Popular frameworks: Django, Flask (web development); Pandas, NumPy (data science).",
+      "examples": [
+        {
+          "tag": "print",
+          "description": "Output text.",
+          "example": "print('Hello World')"
+        },
+        {
+          "tag": "for loop",
+          "description": "Iterate over sequences.",
+          "example": "for x in range(5): print(x)"
+        },
+        {
+          "tag": "def",
+          "description": "Define a function.",
+          "example": "def greet(name): return 'Hello ' + name"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "img": "https://leadproinfotech.com/wp-content/uploads/2025/01/mern-stack.png",
+      "link": "",
+      "name": "MERN Stack",
+      "description": "Full stack development using MongoDB, Express, React, and Node.",
+      "level": "Advanced",
+      "definition": "MERN Stack is a full-stack JavaScript solution for building dynamic web applications from front to back.",
+      "content": "MongoDB handles the database, Express the backend server, React the frontend, and Node.js the runtime.",
+      "content2": "MERN projects typically involve building REST APIs and connecting them to React UIs.",
+      "content3": "It enables rapid, scalable, and modern web app development using one programming language: JavaScript.",
+      "examples": [
+        {
+          "tag": "API",
+          "description": "REST API using Express.",
+          "example": "app.get('/api/items', (req, res) => res.json(items));"
+        },
+        {
+          "tag": "React Client",
+          "description": "Fetch data from API.",
+          "example": "fetch('/api/items').then(res => res.json());"
+        },
+        {
+          "tag": "MongoDB Atlas",
+          "description": "Cloud database connection.",
+          "example": "mongoose.connect(MONGODB_URI);"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "img": "https://ahex.co/wp-content/uploads/2022/06/MeanStack.png",
+      "link": "",
+      "name": "MEAN Stack",
+      "description": "Full stack development using MongoDB, Express, Angular, and Node.",
+      "level": "Advanced",
+      "definition": "MEAN Stack is a JavaScript-based framework for building dynamic web applications with Angular in the frontend.",
+      "content": "MongoDB stores data, Express and Node.js manage the server-side logic, and Angular powers the user interface.",
+      "content2": "It supports creating powerful, scalable single-page applications (SPA).",
+      "content3": "MEAN stack provides a highly efficient full-stack JavaScript environment.",
+      "examples": [
+        {
+          "tag": "Angular Service",
+          "description": "Connect to backend API.",
+          "example": "this.http.get('/api/products')"
+        },
+        {
+          "tag": "Express Routes",
+          "description": "Handle HTTP requests.",
+          "example": "router.post('/products', (req, res) => { /* logic */ });"
+        },
+        {
+          "tag": "MongoDB Queries",
+          "description": "Perform CRUD operations.",
+          "example": "Product.find()"
+        }
+      ]
+    }
+  ]
+}
