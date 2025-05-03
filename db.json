@@ -3,7 +3,7 @@
     {
       "id": "1",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6935wo8bLZh5FeafJEffqWKDOpNpx6UE5bg&s",
-      "name": "HTML ",
+      "name": "HTML  5",
       "description": "Learn the basics of HTML5 for structuring web content.",
       "level": "Beginner",
       "definition": "HTML (HyperText Markup Language) is the standard language for creating webpages and web applications.",
@@ -31,7 +31,7 @@
     {
       "id": "2",
       "img": "https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo-2011.png",
-      "name": "CSS",
+      "name": "CSS new",
       "description": "Master CSS3 to style modern responsive websites and beautiful UI.",
       "level": "Beginner",
       "definition": "CSS (Cascading Style Sheets) is used to control the presentation, formatting, and layout of web pages.",
