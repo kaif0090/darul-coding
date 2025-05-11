@@ -3,13 +3,54 @@
     {
       "id": "1",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6935wo8bLZh5FeafJEffqWKDOpNpx6UE5bg&s",
-      "name": "HTML  5",
-      "description": "Learn the basics of HTML5 for structuring web content.",
-      "level": "Beginner",
-      "definition": "HTML (HyperText Markup Language) is the standard language for creating webpages and web applications.",
-      "content": "HTML uses tags to structure documents, like <h1> for headings, <p> for paragraphs, and <a> for links.",
-      "content2": "It allows embedding images, videos, forms, and interactive content into web pages.",
-      "content3": "HTML5 introduces semantic elements like <article>, <section>, <header>, and better multimedia support.",
+      "name": "HTML 5",
+      "description": "Learn the fundamentals and advanced features of HTML5, the backbone of modern web development.",
+      "level": "Beginner to Advanced",
+      "definition": "HTML (HyperText Markup Language) is the standard markup language used to create and design the structure of web pages and applications.",
+      "features": [
+        "HTML elements are represented by tags enclosed in angle brackets.",
+        "HTML5 is the latest version and includes new semantic tags, form elements, and multimedia capabilities.",
+        "HTML documents are interpreted by web browsers and combined with CSS and JavaScript to form fully functional web pages."
+      ],
+      "usage": "HTML is used to structure content on the web. Elements like headings, paragraphs, links, images, tables, and forms are all defined using HTML tags.",
+      "semanticTags": [
+        "<header>",
+        "<nav>",
+        "<section>",
+        "<article>",
+        "<aside>",
+        "<footer>",
+        "<main>",
+        "<figure>",
+        "<figcaption>"
+      ],
+      "formElements": [
+        "<input>",
+        "<textarea>",
+        "<button>",
+        "<select>",
+        "<option>",
+        "<label>",
+        "<fieldset>",
+        "<legend>",
+        "<datalist>"
+      ],
+      "mediaElements": [
+        "<audio>",
+        "<video>",
+        "<source>",
+        "<track>",
+        "<embed>",
+        "<object>",
+        "<iframe>"
+      ],
+      "structure": {
+        "doctype": "<!DOCTYPE html>",
+        "basicStructure": "<html>\n  <head>\n    <title>Page Title</title>\n  </head>\n  <body>\n    <h1>My First Heading</h1>\n    <p>My first paragraph.</p>\n  </body>\n</html>"
+      },
+      "content": "HTML organizes content using a tree-like structure. Elements can be nested inside each other to form complex layouts.",
+      "content2": "HTML5 adds native support for audio, video, scalable vector graphics (SVG), and canvas-based drawing.",
+      "content3": "Semantic tags improve accessibility, SEO, and developer readability by giving meaning to page structure.",
       "examples": [
         {
           "tag": "<a>",
@@ -25,267 +66,813 @@
           "tag": "<ul>",
           "description": "Creates an unordered list.",
           "example": "<ul><li>Item 1</li><li>Item 2</li></ul>"
+        },
+        {
+          "tag": "<form>",
+          "description": "Creates a user input form.",
+          "example": "<form><input type='text' name='name'><button>Submit</button></form>"
+        },
+        {
+          "tag": "<video>",
+          "description": "Embeds a video.",
+          "example": "<video controls><source src='movie.mp4' type='video/mp4'></video>"
+        }
+      ],
+      "bestPractices": [
+        "Use semantic tags for better SEO and accessibility.",
+        "Always include alt text for images.",
+        "Use proper nesting and indentation for readability.",
+        "Validate your HTML using W3C Validator.",
+        "Avoid inline styles; use CSS instead."
+      ],
+      "resources": [
+        {
+          "title": "MDN Web Docs - HTML",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+          "title": "W3Schools HTML Tutorial",
+          "url": "https://www.w3schools.com/html/"
         }
       ]
     },
+
     {
       "id": "2",
-      "img": "https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo-2011.png",
-      "name": "CSS new",
-      "description": "Master CSS3 to style modern responsive websites and beautiful UI.",
-      "level": "Beginner",
-      "definition": "CSS (Cascading Style Sheets) is used to control the presentation, formatting, and layout of web pages.",
-      "content": "CSS styles HTML elements by applying properties like color, font-size, margins, and positioning.",
-      "content2": "CSS3 introduced animations, flexbox, grid layout, and responsive design features.",
-      "content3": "External stylesheets help keep the HTML structure clean and separate content from design.",
+      "img": "https://pablotools.com/img/loginbg1.jpg",
+      "name": "CSS 3",
+      "description": "Master the power of CSS3 for designing responsive and modern web layouts. and make our site beautiful",
+      "level": "Beginner to Advanced",
+      "definition": "CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of HTML or XML documents.",
+      "features": [
+        "Separates content from design, improving readability and reusability.",
+        "Supports responsive design using media queries.",
+        "Enables animation and transitions to enhance user experience.",
+        "Provides selectors and pseudo-classes for targeting specific elements.",
+        "Supports flexbox and grid for complex layouts."
+      ],
+      "usage": "CSS is used to control the appearance of web pages, including layout, colors, fonts, spacing, and animations.",
+      "semanticTags": [
+        "N/A (CSS doesn't have tags but works with selectors like .class, #id, element)"
+      ],
+      "formElements": [
+        "input[type='text']",
+        "button:hover",
+        "textarea:focus",
+        "select:disabled",
+        "label::before"
+      ],
+      "mediaElements": [
+        "img { max-width: 100%; }",
+        "video { width: 100%; }",
+        ".responsive { object-fit: cover; }"
+      ],
+      "structure": {
+        "doctype": "<style> /* CSS written inside HTML */ </style> or .css external file",
+        "basicStructure": "body {\n  background-color: #f4f4f4;\n  font-family: Arial, sans-serif;\n}\n\nh1 {\n  color: #333;\n  text-align: center;\n}"
+      },
+      "content": "CSS stylesheets can be internal, external, or inline. External styles are preferred for maintainability.",
+      "content2": "CSS3 introduced media queries, transitions, transformations, and grid/flexbox layouts.",
+      "content3": "Using proper CSS architecture improves code clarity and maintainability (e.g., BEM, OOCSS).",
       "examples": [
         {
-          "tag": "color",
-          "description": "Sets the text color.",
-          "example": "p { color: red; }"
+          "tag": "h1 { color: red; }",
+          "description": "Sets the text color of all <h1> elements to red.",
+          "example": "<style> h1 { color: red; } </style>"
         },
         {
-          "tag": "flexbox",
-          "description": "Layout system for responsive design.",
-          "example": "display: flex;"
+          "tag": ".container { display: flex; }",
+          "description": "Applies a flexbox layout to elements with class 'container'.",
+          "example": "<div class='container'>...</div>"
         },
         {
-          "tag": "media queries",
-          "description": "Apply styles based on screen size.",
-          "example": "@media (max-width: 600px) { body { font-size: 14px; } }"
+          "tag": "#header { background: black; color: white; }",
+          "description": "Styles the element with id 'header' with black background and white text.",
+          "example": "<div id='header'>Welcome</div>"
+        },
+        {
+          "tag": "@media (max-width: 768px)",
+          "description": "Defines styles for responsive design under 768px screen width.",
+          "example": "@media (max-width: 768px) { body { font-size: 14px; } }"
+        },
+        {
+          "tag": "button:hover",
+          "description": "Changes button style when hovered over.",
+          "example": "button:hover { background-color: green; }"
+        }
+      ],
+      "bestPractices": [
+        "Use external stylesheets for scalability.",
+        "Avoid using !important unless absolutely necessary.",
+        "Use shorthand properties to reduce code size.",
+        "Organize CSS logically with comments and sections.",
+        "Use CSS variables for consistent theming."
+      ],
+      "resources": [
+        {
+          "title": "MDN Web Docs - CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "title": "W3Schools CSS Tutorial",
+          "url": "https://www.w3schools.com/css/"
+        },
+        {
+          "title": "CSS Tricks",
+          "url": "https://css-tricks.com/"
         }
       ]
     },
     {
       "id": "3",
-      "img": "https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png",
-      "link": "https://youtu.be/hKB-YGF14SY?si=BXuOagsVocN9HyUz",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8iKLj61hdQd-P5qP9QBWOpjvRSmNs7eCyhw&s",
       "name": "JavaScript",
-      "description": "Understand JavaScript fundamentals and dynamic web development.",
-      "level": "Intermediate",
-      "definition": "JavaScript is a scripting language that enables interactive web pages and dynamic web applications.",
-      "content": "It can manipulate HTML and CSS, respond to user actions, and communicate with servers.",
-      "content2": "Popular for form validation, dynamic content updates, animations, and real-time data handling.",
-      "content3": "Modern JavaScript uses ES6+ features like arrow functions, promises, and async/await.",
+      "description": "Learn JavaScript to create dynamic, interactive, and functional web applications.",
+      "level": "Beginner to Advanced",
+      "definition": "JavaScript is a high-level, interpreted programming language used to build dynamic content, control multimedia, animate images, and much more on web pages.",
+      "features": [
+        "Client-side scripting for dynamic webpage behavior.",
+        "Supports object-oriented, functional, and event-driven programming paradigms.",
+        "Works with the DOM (Document Object Model) to update HTML/CSS on the fly.",
+        "Can be used both on the frontend (browsers) and backend (Node.js).",
+        "Supports ES6+ features like arrow functions, classes, async/await, and modules."
+      ],
+      "usage": "JavaScript is used to manipulate the DOM, validate forms, handle events, interact with APIs, and create interactive web applications.",
+      "semanticTags": [
+        "N/A (JavaScript uses functions, variables, and objects rather than tags)"
+      ],
+      "formElements": [
+        "document.querySelector('input')",
+        "addEventListener('submit')",
+        "form.reset()",
+        "input.value",
+        "form.checkValidity()"
+      ],
+      "mediaElements": [
+        "video.play()",
+        "audio.pause()",
+        "element.muted = true",
+        "element.currentTime",
+        "element.volume"
+      ],
+      "structure": {
+        "doctype": "<script> // JavaScript written in HTML </script> or .js external file",
+        "basicStructure": "document.addEventListener('DOMContentLoaded', function() {\n  const btn = document.getElementById('clickBtn');\n  btn.addEventListener('click', function() {\n    alert('Button clicked!');\n  });\n});"
+      },
+      "content": "JavaScript runs in the browser and can respond to user actions like clicks, keypresses, and mouse movements.",
+      "content2": "Modern JavaScript includes asynchronous programming using promises, async/await, and fetch API for network requests.",
+      "content3": "JavaScript is at the core of frontend frameworks like React, Angular, and Vue, and is also widely used on the backend with Node.js.",
       "examples": [
         {
-          "tag": "alert",
-          "description": "Displays a popup alert.",
-          "example": "alert('Hello World!');"
+          "tag": "document.getElementById('demo').innerText = 'Hello World!';",
+          "description": "Changes the text content of an HTML element with ID 'demo'.",
+          "example": "<p id='demo'></p>\n<script>document.getElementById('demo').innerText = 'Hello World!';</script>"
         },
         {
-          "tag": "function",
-          "description": "Defines reusable blocks of code.",
-          "example": "function greet() { console.log('Hi'); }"
+          "tag": "let sum = (a, b) => a + b;",
+          "description": "Arrow function that returns the sum of two numbers.",
+          "example": "<script>let sum = (a, b) => a + b; console.log(sum(2, 3));</script>"
         },
         {
-          "tag": "document.querySelector",
-          "description": "Selects DOM elements.",
-          "example": "document.querySelector('h1').style.color = 'blue';"
+          "tag": "fetch('https://api.example.com/data')",
+          "description": "Fetches data asynchronously from a server.",
+          "example": "<script>\nfetch('https://api.example.com/data')\n.then(res => res.json())\n.then(data => console.log(data));\n</script>"
+        },
+        {
+          "tag": "for (let i = 0; i < 5; i++)",
+          "description": "Loop that iterates five times.",
+          "example": "<script>for (let i = 0; i < 5; i++) { console.log(i); }</script>"
+        },
+        {
+          "tag": "try { ... } catch (error) { ... }",
+          "description": "Handles errors using try-catch blocks.",
+          "example": "<script>\ntry {\n  let result = riskyFunction();\n} catch (error) {\n  console.error(error);\n}\n</script>"
+        }
+      ],
+      "bestPractices": [
+        "Use `let` and `const` instead of `var` for variable declarations.",
+        "Always handle errors in asynchronous code using try/catch or .catch().",
+        "Avoid polluting the global namespace; use modules or IIFEs.",
+        "Keep functions small and focused on a single task.",
+        "Use meaningful variable and function names."
+      ],
+      "resources": [
+        {
+          "title": "MDN Web Docs - JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "title": "JavaScript Info",
+          "url": "https://javascript.info/"
+        },
+        {
+          "title": "W3Schools JavaScript Tutorial",
+          "url": "https://www.w3schools.com/js/"
         }
       ]
     },
     {
       "id": "4",
-      "img": "https://cdn.worldvectorlogo.com/logos/react-native-1.svg",
-      "link": "https://youtu.be/E6tAtRi82QY?si=9BXR-PPwYbhuWYeN",
-      "name": "React js",
-      "description": "Build powerful user interfaces using React.js it is java script library.",
-      "level": "Intermediate",
-      "definition": "React is a JavaScript library for building fast, interactive user interfaces using a component-based architecture.",
-      "content": "Uses JSX syntax to combine HTML and JavaScript logic in one file.",
-      "content2": "React components manage their own state and can be reused across applications.",
-      "content3": "React uses a virtual DOM to optimize rendering performance.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      "name": "React JS",
+      "description": "Build fast and dynamic user interfaces using React.js, a powerful JavaScript library.",
+      "level": "Intermediate to Advanced",
+      "definition": "React.js is an open-source JavaScript library developed by Facebook for building interactive user interfaces and single-page applications using a component-based architecture.",
+      "features": [
+        "Uses a virtual DOM to improve performance by minimizing direct DOM manipulation.",
+        "Component-based architecture for building reusable UI components.",
+        "Unidirectional data flow for predictable state management.",
+        "Supports JSX, a syntax extension that allows writing HTML in JavaScript.",
+        "Ecosystem tools like React Router, Redux, and Context API for routing and state management."
+      ],
+      "usage": "React is used to build interactive, fast, and scalable web applications. It is suitable for both small projects and large-scale enterprise applications.",
+      "semanticTags": [
+        "React components encapsulate structure and logic instead of traditional HTML tags."
+      ],
+      "formElements": [
+        "<input value={value} onChange={handleChange} />",
+        "<form onSubmit={handleSubmit}>...</form>",
+        "<button onClick={handleClick}>Click</button>",
+        "<select value={option} onChange={handleChange}>...</select>",
+        "<textarea value={text} onChange={handleChange} />"
+      ],
+      "mediaElements": [
+        "<img src={imgUrl} alt='Description' />",
+        "<video controls src='video.mp4' />",
+        "<audio controls src='audio.mp3' />"
+      ],
+      "structure": {
+        "doctype": "React uses JSX inside JavaScript files (.js or .jsx)",
+        "basicStructure": "import React from 'react';\n\nfunction App() {\n  return (\n    <div>\n      <h1>Hello React</h1>\n      <p>This is a simple React component.</p>\n    </div>\n  );\n}\n\nexport default App;"
+      },
+      "content": "React components can be function-based or class-based, and they manage their own state and lifecycle.",
+      "content2": "React hooks like useState and useEffect enable powerful state and side-effect management in functional components.",
+      "content3": "React is often used with libraries like Redux for state management, and React Router for navigation.",
       "examples": [
         {
-          "tag": "Component",
-          "description": "Basic React component.",
-          "example": "function Welcome() { return <h1>Hello World</h1>; }"
-        },
-        {
-          "tag": "State",
-          "description": "Manage local data inside a component.",
+          "tag": "useState",
+          "description": "Hook that adds state to functional components.",
           "example": "const [count, setCount] = useState(0);"
         },
         {
-          "tag": "Props",
-          "description": "Pass data to components.",
-          "example": "<Greeting name='John' />",
-          "data": ""
+          "tag": "useEffect",
+          "description": "Hook that performs side effects in functional components.",
+          "example": "useEffect(() => { document.title = `Count: ${count}`; }, [count]);"
+        },
+        {
+          "tag": "<Component />",
+          "description": "Represents a custom component in JSX.",
+          "example": "<Header title='Welcome' />"
+        },
+        {
+          "tag": "props",
+          "description": "Used to pass data between components.",
+          "example": "function Greeting({ name }) { return <h1>Hello, {name}</h1>; }"
+        },
+        {
+          "tag": "map()",
+          "description": "Used to render lists in JSX.",
+          "example": "{items.map(item => <li key={item.id}>{item.name}</li>)}"
+        }
+      ],
+      "bestPractices": [
+        "Use functional components and hooks over class components.",
+        "Keep components small and focused on a single responsibility.",
+        "Use keys when rendering lists to optimize re-rendering.",
+        "Organize your project structure modularly (components, hooks, services, etc.).",
+        "Avoid unnecessary re-renders by memoizing components when needed."
+      ],
+      "resources": [
+        {
+          "title": "React Official Documentation",
+          "url": "https://reactjs.org/docs/getting-started.html"
+        },
+        {
+          "title": "W3Schools React Tutorial",
+          "url": "https://www.w3schools.com/react/"
+        },
+        {
+          "title": "FreeCodeCamp React Course",
+          "url": "https://www.freecodecamp.org/learn/front-end-development-libraries/#react"
         }
       ]
     },
     {
       "id": "5",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png",
-      "link": "https://youtu.be/oUmVFHlwZsI?si=EAZPp5pUNH9WKbzl",
+      "img": "https://angular.io/assets/images/logos/angular/angular.svg",
       "name": "Angular",
-      "description": "Develop dynamic single-page applications using Angular.",
-      "level": "Advanced",
-      "definition": "Angular is a TypeScript-based framework for building scalable single-page web applications.",
-      "content": "It uses a component-based architecture and powerful templating with two-way data binding.",
-      "content2": "Includes built-in support for routing, forms, HTTP requests, and dependency injection.",
-      "content3": "Angular CLI simplifies development by generating components, services, and modules.",
+      "description": "Develop powerful and scalable single-page applications using Angular.",
+      "level": "Intermediate to Advanced",
+      "definition": "Angular is a platform and framework for building client-side applications using HTML, CSS, and TypeScript. It provides tools and libraries for building scalable and maintainable applications.",
+      "features": [
+        "Component-based architecture for reusable UI modules.",
+        "Two-way data binding for real-time UI updates.",
+        "Dependency injection system for better modularity and testing.",
+        "Powerful CLI for scaffolding and managing Angular projects.",
+        "Routing module for single-page application navigation.",
+        "RxJS and Observables for reactive programming."
+      ],
+      "usage": "Angular is used to build large-scale enterprise-grade web applications with complex business logic, dynamic user interfaces, and robust features.",
+      "semanticTags": [
+        "Angular components use standard HTML5 elements enriched with directives and bindings."
+      ],
+      "formElements": [
+        "<input [(ngModel)]='username'>",
+        "<form (ngSubmit)='onSubmit()'>...</form>",
+        "<button (click)='handleClick()'>Submit</button>",
+        "<select [(ngModel)]='selected'>...</select>",
+        "<textarea [(ngModel)]='message'></textarea>"
+      ],
+      "mediaElements": [
+        "<img [src]='imageUrl' alt='description'>",
+        "<video [src]='videoUrl' controls></video>",
+        "<audio [src]='audioUrl' controls></audio>"
+      ],
+      "structure": {
+        "doctype": "Angular uses TypeScript and HTML templates in .ts and .html files.",
+        "basicStructure": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n  title = 'My Angular App';\n}"
+      },
+      "content": "Angular applications are built using modules, components, and services. Each component contains a TypeScript class, HTML template, and styles.",
+      "content2": "Angular supports both template-driven and reactive forms for flexible form handling.",
+      "content3": "Routing, lazy loading, and guards allow Angular apps to scale efficiently while maintaining performance and security.",
       "examples": [
         {
-          "tag": "Component",
-          "description": "Defines a new component.",
-          "example": "@Component({ selector: 'app-root', templateUrl: './app.component.html' })"
+          "tag": "*ngFor",
+          "description": "Repeats an element for each item in a collection.",
+          "example": "<li *ngFor='let item of items'>{{ item }}</li>"
         },
         {
-          "tag": "ngFor",
-          "description": "Loop over a list in templates.",
-          "example": "<li *ngFor='let item of items'>{{item}}</li>"
+          "tag": "*ngIf",
+          "description": "Conditionally includes an element in the DOM.",
+          "example": "<p *ngIf='isLoggedIn'>Welcome back!</p>"
         },
         {
-          "tag": "Service",
-          "description": "Share data and logic across components.",
-          "example": "@Injectable({ providedIn: 'root' })"
+          "tag": "[(ngModel)]",
+          "description": "Two-way data binding between input and component property.",
+          "example": "<input [(ngModel)]='username'>"
+        },
+        {
+          "tag": "(click)",
+          "description": "Event binding to handle click events.",
+          "example": "<button (click)='onClick()'>Click Me</button>"
+        },
+        {
+          "tag": "[routerLink]",
+          "description": "Links to a route within the app.",
+          "example": "<a [routerLink]=\"['/home']\">Home</a>"
+        }
+      ],
+      "bestPractices": [
+        "Use Angular CLI for consistent project structure and best practices.",
+        "Follow the Angular Style Guide for maintainable code.",
+        "Use lazy loading to improve performance.",
+        "Keep components small and focused.",
+        "Use services for shared logic and HTTP requests."
+      ],
+      "resources": [
+        {
+          "title": "Angular Official Documentation",
+          "url": "https://angular.io/docs"
+        },
+        {
+          "title": "W3Schools Angular Tutorial",
+          "url": "https://www.w3schools.com/angular/"
+        },
+        {
+          "title": "Angular University",
+          "url": "https://angular-university.io/"
         }
       ]
     },
     {
       "id": "6",
-      "img": "https://www.svgrepo.com/download/303360/nodejs-logo.svg",
-      "link": "https://youtu.be/BLl32FvcdVM?si=BYe6V80wYP3s5HKE",
+      "img": "https://nodejs.org/static/images/logo.svg",
       "name": "Node.js",
-      "description": "Server-side programming using Node.js and Express it is java script libarary.",
-      "level": "Intermediate",
-      "definition": "Node.js is a JavaScript runtime built on Chrome's V8 engine, used to create scalable server-side applications.",
-      "content": "Allows running JavaScript code outside the browser, typically on servers.",
-      "content2": "Commonly used with Express.js to build REST APIs and backend services.",
-      "content3": "Supports asynchronous programming using callbacks, promises, and async/await.",
+      "description": "Learn Node.js to build fast and scalable server-side applications using JavaScript.",
+      "level": "Intermediate to Advanced",
+      "definition": "Node.js is an open-source, cross-platform runtime environment that allows developers to run JavaScript on the server side. It is built on Chrome's V8 JavaScript engine.",
+      "features": [
+        "Asynchronous and event-driven architecture for high performance.",
+        "Non-blocking I/O model suited for scalable network applications.",
+        "NPM (Node Package Manager) with thousands of reusable packages.",
+        "Supports RESTful APIs and real-time services with WebSocket.",
+        "Can be used to build command-line tools, backend services, and microservices."
+      ],
+      "usage": "Node.js is used for building backend services like APIs, handling HTTP requests, connecting to databases, file systems, and enabling real-time communication with technologies like WebSocket.",
+      "semanticTags": [
+        "Not applicable (Node.js is backend, it works with APIs and server-side logic rather than HTML tags)"
+      ],
+      "formElements": [
+        "Handled via HTTP request handlers (e.g., req.body from forms using Express.js)."
+      ],
+      "mediaElements": [
+        "Used to serve media content from the server via streams or static file handlers."
+      ],
+      "structure": {
+        "doctype": "Node.js apps are written in JavaScript or TypeScript and typically structured with entry points like `index.js` or `app.js`.",
+        "basicStructure": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.setHeader('Content-Type', 'text/plain');\n  res.end('Hello World');\n});\n\nserver.listen(3000, () => {\n  console.log('Server running at http://localhost:3000/');\n});"
+      },
+      "content": "Node.js uses modules to organize functionality. Common core modules include `fs`, `http`, `path`, and third-party modules via npm.",
+      "content2": "Express.js is the most popular web framework for Node.js, simplifying routing, middleware, and handling HTTP requests.",
+      "content3": "Node.js is ideal for real-time apps (like chats or games), API backends, and microservices due to its non-blocking event-driven model.",
       "examples": [
         {
+          "tag": "http.createServer",
+          "description": "Creates a basic HTTP server.",
+          "example": "const http = require('http');\nhttp.createServer((req, res) => {\n  res.end('Hello');\n}).listen(3000);"
+        },
+        {
+          "tag": "fs.readFile",
+          "description": "Reads files from the server.",
+          "example": "const fs = require('fs');\nfs.readFile('file.txt', 'utf8', (err, data) => {\n  if (err) throw err;\n  console.log(data);\n});"
+        },
+        {
+          "tag": "express.get",
+          "description": "Defines a GET route using Express.",
+          "example": "app.get('/', (req, res) => {\n  res.send('Home Page');\n});"
+        },
+        {
           "tag": "require",
-          "description": "Import modules in Node.js.",
-          "example": "const express = require('express');"
+          "description": "Imports built-in or third-party modules.",
+          "example": "const path = require('path');"
         },
         {
-          "tag": "app.get",
-          "description": "Define a route.",
-          "example": "app.get('/', (req, res) => res.send('Hello World'));"
+          "tag": "module.exports",
+          "description": "Exports a module to be used in other files.",
+          "example": "module.exports = myFunction;"
+        }
+      ],
+      "bestPractices": [
+        "Use asynchronous APIs to avoid blocking the event loop.",
+        "Structure your app into modules for better maintainability.",
+        "Use environment variables for sensitive data (e.g., with dotenv).",
+        "Validate all input to avoid injection attacks.",
+        "Handle errors properly using try/catch and middleware."
+      ],
+      "resources": [
+        {
+          "title": "Node.js Official Documentation",
+          "url": "https://nodejs.org/en/docs/"
         },
         {
-          "tag": "listen",
-          "description": "Start the server.",
-          "example": "app.listen(3000);"
+          "title": "MDN Web Docs - Node.js",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Node_server_without_framework"
+        },
+        {
+          "title": "W3Schools Node.js Tutorial",
+          "url": "https://www.w3schools.com/nodejs/"
+        },
+        {
+          "title": "The Net Ninja - Node.js Playlist (YouTube)",
+          "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp"
         }
       ]
     },
     {
       "id": "7",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/0/00/Mongodb.png",
-      "link": "https://youtu.be/J6mDkcqU_ZE?si=y5pvAh8kv0tZ8MVv",
+      "img": "https://www.mongodb.com/assets/images/global/leaf.png",
       "name": "MongoDB",
-      "description": "Learn NoSQL database design with MongoDB its manage data backend.",
-      "level": "Intermediate",
-      "definition": "MongoDB is a NoSQL database that stores data in flexible, JSON-like documents.",
-      "content": "It allows dynamic schemas, making it highly scalable and developer-friendly.",
-      "content2": "Common operations: inserting, updating, deleting, and querying documents.",
-      "content3": "Mongoose is often used in Node.js apps to model MongoDB data.",
+      "description": "Master MongoDB, the leading NoSQL database for modern web applications.",
+      "level": "Beginner to Advanced",
+      "definition": "MongoDB is a document-oriented NoSQL database used to store, retrieve, and manage unstructured or semi-structured data using JSON-like documents.",
+      "features": [
+        "Schema-less data storage using flexible JSON-like documents (BSON).",
+        "Horizontal scaling with built-in sharding.",
+        "High availability through replication.",
+        "Powerful querying and indexing capabilities.",
+        "Integrated aggregation framework for complex data transformations."
+      ],
+      "usage": "MongoDB is used for storing data in modern web and mobile applications, especially where flexibility, scalability, and performance are required. Commonly paired with Node.js in the MERN or MEAN stacks.",
+      "semanticTags": ["N/A (MongoDB is a database, not a markup language)"],
+      "formElements": [
+        "Forms on the frontend submit data to the backend, which is then stored in MongoDB using collections and documents."
+      ],
+      "mediaElements": [
+        "Binary files like images and videos can be stored using MongoDB GridFS for large file storage."
+      ],
+      "structure": {
+        "doctype": "MongoDB doesn't use a DOCTYPE. Data is structured as documents inside collections.",
+        "basicStructure": "{\n  \"_id\": ObjectId(\"507f191e810c19729de860ea\"),\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\",\n  \"age\": 30\n}"
+      },
+      "content": "MongoDB stores data in collections, where each entry is a document (similar to a JSON object). Documents in a collection don't require a predefined schema.",
+      "content2": "It supports rich queries, text search, geospatial indexing, and aggregation pipelines for analytics.",
+      "content3": "Used widely in scalable cloud applications, it integrates well with cloud providers like AWS, Azure, and MongoDB Atlas.",
       "examples": [
         {
-          "tag": "insertOne",
-          "description": "Insert a document.",
-          "example": "db.collection('users').insertOne({name: 'John'});"
+          "tag": "db.collection.insertOne()",
+          "description": "Inserts a single document into a collection.",
+          "example": "db.users.insertOne({ name: 'Alice', age: 25 });"
         },
         {
-          "tag": "find",
-          "description": "Query documents.",
-          "example": "db.collection('users').find({name: 'John'});"
+          "tag": "db.collection.find()",
+          "description": "Retrieves documents that match a query.",
+          "example": "db.users.find({ age: { $gt: 20 } });"
         },
         {
-          "tag": "updateOne",
-          "description": "Update a document.",
-          "example": "db.collection('users').updateOne({name: 'John'}, {$set: {age: 30}});"
+          "tag": "db.collection.updateOne()",
+          "description": "Updates a single document in a collection.",
+          "example": "db.users.updateOne({ name: 'Alice' }, { $set: { age: 26 } });"
+        },
+        {
+          "tag": "db.collection.deleteOne()",
+          "description": "Deletes a single document from a collection.",
+          "example": "db.users.deleteOne({ name: 'Alice' });"
+        },
+        {
+          "tag": "db.collection.aggregate()",
+          "description": "Performs aggregation operations like filtering, grouping, and transforming data.",
+          "example": "db.orders.aggregate([{ $group: { _id: \"$customer\", total: { $sum: \"$amount\" } } }]);"
+        }
+      ],
+      "bestPractices": [
+        "Use indexes on frequently queried fields for performance.",
+        "Avoid deeply nested documents that exceed BSON document size limit (16MB).",
+        "Use schema validation for data consistency.",
+        "Monitor and optimize queries using MongoDB Compass or Atlas.",
+        "Use replica sets for high availability and sharding for scalability."
+      ],
+      "resources": [
+        {
+          "title": "MongoDB Official Docs",
+          "url": "https://www.mongodb.com/docs/"
+        },
+        {
+          "title": "MongoDB University",
+          "url": "https://university.mongodb.com/"
+        },
+        {
+          "title": "W3Schools MongoDB Tutorial",
+          "url": "https://www.w3schools.com/mongodb/"
+        },
+        {
+          "title": "MongoDB Compass",
+          "url": "https://www.mongodb.com/products/compass"
+        },
+        {
+          "title": "The Net Ninja - MongoDB Tutorial",
+          "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G"
         }
       ]
     },
     {
       "id": "8",
-      "img": "https://cdn.freelogovectors.net/wp-content/uploads/2023/09/python_logo-01-freelogovectors.net_.png",
-      "link": "https://youtu.be/UrsmFxEIp5k?si=YVhgx_2Kz11LL5E2",
+      "img": "https://www.python.org/static/community_logos/python-logo.png",
       "name": "Python",
-      "description": "Intro to Python programming for backend and scripting.",
-      "level": "Beginner",
-      "definition": "Python is a popular, beginner-friendly programming language known for its simplicity and versatility.",
-      "content": "Commonly used for web development, data science, AI, and automation.",
-      "content2": "Python uses indentation to define code blocks, promoting clean code.",
-      "content3": "Popular frameworks: Django, Flask (web development); Pandas, NumPy (data science).",
+      "description": "Learn Python, a powerful, versatile, and beginner-friendly programming language ",
+      "level": "Beginner to Advanced",
+      "definition": "Python is a high-level, interpreted, general-purpose programming language known for its readability and wide range of applications.",
+      "features": [
+        "Simple and readable syntax, making it beginner-friendly.",
+        "Dynamically typed and interpreted language.",
+        "Supports object-oriented, functional, and procedural programming paradigms.",
+        "Rich standard library and active community ecosystem.",
+        "Extensive third-party modules for data science, web development, automation, AI, and more."
+      ],
+      "usage": "Python is used in web development (Django, Flask), data analysis (Pandas, NumPy), machine learning (TensorFlow, scikit-learn), automation (scripts), and more.",
+      "semanticTags": [
+        "N/A (Python is a programming language, not a markup language)"
+      ],
+      "formElements": [
+        "Used to handle form submissions in web frameworks like Django and Flask."
+      ],
+      "mediaElements": [
+        "Can process and analyze media files (images, video, audio) using libraries like OpenCV, PIL, and moviepy."
+      ],
+      "structure": {
+        "doctype": "N/A",
+        "basicStructure": "def greet(name):\n  print(f\"Hello, {name}!\")\n\ngreet(\"Alice\")"
+      },
+      "content": "Python code is typically written in .py files and executed with a Python interpreter. Indentation defines code blocks instead of braces.",
+      "content2": "Python emphasizes code readability and simplicity, which makes it ideal for beginners as well as professionals.",
+      "content3": "It is widely used in academic, enterprise, and industrial environments due to its versatility and rapid development capabilities.",
       "examples": [
         {
-          "tag": "print",
-          "description": "Output text.",
-          "example": "print('Hello World')"
-        },
-        {
-          "tag": "for loop",
-          "description": "Iterate over sequences.",
-          "example": "for x in range(5): print(x)"
+          "tag": "print()",
+          "description": "Outputs text or variables to the console.",
+          "example": "print(\"Hello, World!\")"
         },
         {
           "tag": "def",
-          "description": "Define a function.",
-          "example": "def greet(name): return 'Hello ' + name"
+          "description": "Defines a function.",
+          "example": "def add(x, y):\n  return x + y"
+        },
+        {
+          "tag": "for",
+          "description": "Loops over a sequence.",
+          "example": "for i in range(5):\n  print(i)"
+        },
+        {
+          "tag": "if __name__ == '__main__'",
+          "description": "Defines the main entry point of a Python script.",
+          "example": "if __name__ == '__main__':\n  print(\"Running as main script\")"
+        },
+        {
+          "tag": "class",
+          "description": "Defines a class for object-oriented programming.",
+          "example": "class Person:\n  def __init__(self, name):\n    self.name = name"
+        }
+      ],
+      "bestPractices": [
+        "Follow PEP8 for consistent code style.",
+        "Use virtual environments to manage dependencies.",
+        "Use type hints for better readability and tooling support.",
+        "Write unit tests with unittest or pytest.",
+        "Keep functions short and focused on one task."
+      ],
+      "resources": [
+        {
+          "title": "Python Official Docs",
+          "url": "https://docs.python.org/3/"
+        },
+        {
+          "title": "W3Schools Python Tutorial",
+          "url": "https://www.w3schools.com/python/"
+        },
+        {
+          "title": "Real Python",
+          "url": "https://realpython.com/"
+        },
+        {
+          "title": "Python for Everybody - FreeCourse",
+          "url": "https://www.py4e.com/"
+        },
+        {
+          "title": "The Net Ninja - Python Tutorial",
+          "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp"
         }
       ]
     },
     {
       "id": "9",
-      "img": "https://leadproinfotech.com/wp-content/uploads/2025/01/mern-stack.png",
-      "link": "",
+      "img": "https://miro.medium.com/v2/resize:fit:1200/1*B2QDYzZ3gsf6yGVFwL9AtA.png",
       "name": "MERN Stack",
-      "description": "Full stack development using MongoDB, Express, React, and Node.",
-      "level": "Advanced",
-      "definition": "MERN Stack is a full-stack JavaScript solution for building dynamic web applications from front to back.",
-      "content": "MongoDB handles the database, Express the backend server, React the frontend, and Node.js the runtime.",
-      "content2": "MERN projects typically involve building REST APIs and connecting them to React UIs.",
-      "content3": "It enables rapid, scalable, and modern web app development using one programming language: JavaScript.",
+      "description": "Master full-stack web development using the MERN stack: MongoDB, Express.js,.",
+      "level": "Intermediate to Advanced",
+      "definition": "MERN is a popular full-stack JavaScript framework comprising MongoDB (database), Express.js (backend framework), React.js (frontend library), and Node.js (runtime environment).",
+      "features": [
+        "Uses JavaScript across the stack, simplifying development.",
+        "Supports full CRUD operations using MongoDB and REST APIs.",
+        "Provides a reactive, component-based UI with React.",
+        "Offers scalable, modular server-side development with Express and Node.",
+        "Ideal for building SPAs (Single Page Applications) and RESTful APIs."
+      ],
+      "usage": "MERN Stack is used to build dynamic, single-page web applications where the front end (React) communicates with the back end (Node.js + Express) and a NoSQL database (MongoDB).",
+      "semanticTags": ["N/A (Not a markup language but a technology stack)"],
+      "formElements": [
+        "React handles form elements using controlled/uncontrolled components.",
+        "Form data is processed via APIs in Express and saved to MongoDB."
+      ],
+      "mediaElements": [
+        "Media can be uploaded via React forms, handled by Express routes, and stored in MongoDB (or cloud storage like AWS, Cloudinary)."
+      ],
+      "structure": {
+        "doctype": "N/A",
+        "basicStructure": "// React (frontend)\nfunction App() {\n  return <h1>Hello from React</h1>;\n}\n\n// Express (backend)\napp.get('/api/data', (req, res) => {\n  res.json({ msg: 'Hello from server' });\n});"
+      },
+      "content": "MERN uses React for building rich, dynamic UI components, Express and Node for handling server-side logic and APIs, and MongoDB as the flexible, document-oriented database.",
+      "content2": "It allows full-stack development using a single language—JavaScript—making code sharing and development more efficient.",
+      "content3": "Ideal for real-time applications, social media platforms, dashboards, and admin panels due to its modular and scalable design.",
       "examples": [
         {
-          "tag": "API",
-          "description": "REST API using Express.",
-          "example": "app.get('/api/items', (req, res) => res.json(items));"
+          "tag": "React Component",
+          "description": "Frontend UI component.",
+          "example": "function Welcome() {\n  return <h1>Welcome to MERN</h1>;\n}"
         },
         {
-          "tag": "React Client",
-          "description": "Fetch data from API.",
-          "example": "fetch('/api/items').then(res => res.json());"
+          "tag": "Express Route",
+          "description": "Handles backend requests.",
+          "example": "app.post('/api/users', (req, res) => {\n  // Save to MongoDB\n});"
         },
         {
-          "tag": "MongoDB Atlas",
-          "description": "Cloud database connection.",
-          "example": "mongoose.connect(MONGODB_URI);"
+          "tag": "MongoDB Document",
+          "description": "Data structure stored in MongoDB.",
+          "example": "{ \"name\": \"John\", \"email\": \"john@example.com\" }"
+        },
+        {
+          "tag": "useEffect() in React",
+          "description": "Handles side effects like API calls.",
+          "example": "useEffect(() => {\n  fetch('/api/data').then(res => res.json()).then(data => setData(data));\n}, []);"
+        },
+        {
+          "tag": "mongoose.model()",
+          "description": "Defines MongoDB schema in Node.js.",
+          "example": "const User = mongoose.model('User', userSchema);"
+        }
+      ],
+      "bestPractices": [
+        "Use environment variables for secrets and config.",
+        "Structure the app into separate folders: client, server, models, routes.",
+        "Use state management (like Redux or Context) wisely in React.",
+        "Handle API errors and edge cases properly in Express.",
+        "Sanitize and validate user input before saving to MongoDB."
+      ],
+      "resources": [
+        {
+          "title": "Official MERN Stack Guide",
+          "url": "https://www.mongodb.com/mern-stack"
+        },
+        {
+          "title": "freeCodeCamp - MERN Stack Course",
+          "url": "https://www.youtube.com/watch?v=7CqJlxBYj-M"
+        },
+        {
+          "title": "Traversy Media - MERN Tutorial",
+          "url": "https://www.youtube.com/watch?v=4yqu8YF29cU"
+        },
+        {
+          "title": "MongoDB Docs",
+          "url": "https://www.mongodb.com/docs/"
+        },
+        {
+          "title": "React Docs",
+          "url": "https://reactjs.org/docs/getting-started.html"
         }
       ]
     },
     {
       "id": "10",
-      "img": "https://ahex.co/wp-content/uploads/2022/06/MeanStack.png",
-      "link": "",
+      "img": "https://miro.medium.com/max/2000/1*m6PblONzkMcq-0aP8wX64A.png",
       "name": "MEAN Stack",
-      "description": "Full stack development using MongoDB, Express, Angular, and Node.",
-      "level": "Advanced",
-      "definition": "MEAN Stack is a JavaScript-based framework for building dynamic web applications with Angular in the frontend.",
-      "content": "MongoDB stores data, Express and Node.js manage the server-side logic, and Angular powers the user interface.",
-      "content2": "It supports creating powerful, scalable single-page applications (SPA).",
-      "content3": "MEAN stack provides a highly efficient full-stack JavaScript environment.",
+      "description": "Master full-stack web development using the MEAN stack: MongoDB, Express.js, Angular, and Node.js.",
+      "level": "Intermediate to Advanced",
+      "definition": "MEAN is a full-stack JavaScript framework comprising MongoDB (database), Express.js (backend framework), Angular (frontend framework), and Node.js (runtime environment).",
+      "features": [
+        "Uses JavaScript for both front-end and back-end, making development more seamless.",
+        "Supports the development of dynamic and scalable web applications.",
+        "Encourages the use of RESTful APIs to connect front-end and back-end services.",
+        "Allows developers to write modular, maintainable code with reusable components.",
+        "Perfect for building real-time applications, single-page applications (SPAs), and APIs."
+      ],
+      "usage": "MEAN Stack is used for building full-stack web applications where the frontend (Angular) communicates with the backend (Node.js + Express) and MongoDB is used as the database.",
+      "semanticTags": ["N/A (Not a markup language but a technology stack)"],
+      "formElements": [
+        "Angular handles form elements using reactive forms or template-driven forms.",
+        "Form data is processed via APIs in Express and saved to MongoDB."
+      ],
+      "mediaElements": [
+        "Media can be uploaded via Angular forms, handled by Express routes, and stored in MongoDB (or cloud storage)."
+      ],
+      "structure": {
+        "doctype": "N/A",
+        "basicStructure": "// Angular (frontend)\n@Component({\n  selector: 'app-root',\n  template: '<h1>MEAN Stack App</h1>'\n})\nexport class AppComponent { }\n\n// Express (backend)\napp.get('/api/data', (req, res) => {\n  res.json({ msg: 'Hello from server' });\n});"
+      },
+      "content": "MEAN uses Angular for building dynamic and modular UI components, Express and Node.js for backend server-side logic, and MongoDB for flexible document-oriented storage.",
+      "content2": "Angular provides a declarative approach to building rich UIs, and it's perfect for building large-scale applications. The MEAN stack makes it possible to build applications with a consistent development environment using JavaScript throughout the entire stack.",
+      "content3": "The MEAN stack provides excellent scalability, real-time updates, and modular development, making it a great choice for building applications like social media platforms, dashboards, and collaborative tools.",
       "examples": [
         {
-          "tag": "Angular Service",
-          "description": "Connect to backend API.",
-          "example": "this.http.get('/api/products')"
+          "tag": "Angular Component",
+          "description": "A basic UI component in Angular.",
+          "example": "import { Component } from '@angular/core';\n@Component({\n  selector: 'app-home',\n  template: '<h1>Welcome to MEAN Stack!</h1>'\n})\nexport class HomeComponent {}"
         },
         {
-          "tag": "Express Routes",
-          "description": "Handle HTTP requests.",
-          "example": "router.post('/products', (req, res) => { /* logic */ });"
+          "tag": "Express Route",
+          "description": "Handles backend requests in Node.js using Express.",
+          "example": "app.post('/api/users', (req, res) => {\n  // Save to MongoDB\n});"
         },
         {
-          "tag": "MongoDB Queries",
-          "description": "Perform CRUD operations.",
-          "example": "Product.find()"
+          "tag": "MongoDB Document",
+          "description": "Data structure stored in MongoDB.",
+          "example": "{ \"name\": \"John\", \"email\": \"john@example.com\" }"
+        },
+        {
+          "tag": "ngOnInit() in Angular",
+          "description": "Angular lifecycle hook that runs after the component is initialized.",
+          "example": "ngOnInit() {\n  this.dataService.getData().subscribe(data => this.data = data);\n}"
+        },
+        {
+          "tag": "mongoose.model()",
+          "description": "Defines MongoDB schema in Node.js.",
+          "example": "const User = mongoose.model('User', userSchema);"
+        }
+      ],
+      "bestPractices": [
+        "Use Angular CLI for easy component and service management.",
+        "Separate API logic into controllers and services in Express.",
+        "Use environment variables to manage secrets and sensitive data.",
+        "Keep MongoDB collections and documents schema-less when possible for flexibility.",
+        "Use Angular's built-in form validation to handle user inputs effectively."
+      ],
+      "resources": [
+        {
+          "title": "MEAN Stack Official Documentation",
+          "url": "https://mean.io/"
+        },
+        {
+          "title": "Angular Documentation",
+          "url": "https://angular.io/docs"
+        },
+        {
+          "title": "MongoDB Documentation",
+          "url": "https://www.mongodb.com/docs/"
+        },
+        {
+          "title": "Node.js Documentation",
+          "url": "https://nodejs.org/en/docs/"
+        },
+        {
+          "title": "freeCodeCamp - MEAN Stack Tutorial",
+          "url": "https://www.freecodecamp.org/news/learn-the-mean-stack/"
         }
       ]
     }

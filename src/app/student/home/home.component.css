@@ -4,6 +4,7 @@
     background-image: url("https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     background-attachment: fixed;
     background-size: contain;
+  
     background-repeat: no-repeat;
     object-fit: contain;
 }
@@ -282,9 +283,14 @@ svg text {
 	}
 }
 
-.wrapper {background-color: #ffffff00};
+.wrappe {background-color: #ffffff00};
 
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+
+
+
+
 
 svg {
 	font-family: "Russo One", sans-serif;
@@ -309,4 +315,4 @@ svg text {
 	}
 }
 
-.wrapper {background-color: #ffffff00};
+.wrapper {background-color: #000000b0};

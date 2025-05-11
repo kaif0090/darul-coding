@@ -39,17 +39,52 @@
           <strong>Advanced Content:</strong> {{ course.content3 }}
         </p>
       </div>
-  
-      <div class="examples-section">
-        <h4>Common  Tags:</h4>
-        <ul>
-          <li *ngFor="let example of course.examples">
-            <strong>{{ example.tag }}:</strong> 
-            <span>{{ example.description }}</span> <br />
-            <code>{{ example.example }}</code>
-          </li>
-        </ul>
-      </div>
+       <h3>Key Features</h3>
+  <ul>
+    <li *ngFor="let f of course.features">{{ f }}</li>
+  </ul>
+
+     
+<!-- ======================================== -->
+       <h3>Usage</h3>
+  <p>{{ course.usage }}</p>
+
+  <h3>Semantic Tags</h3>
+  <p>{{ course.semanticTags.join(', ') }}</p>
+
+  <h3>Form Elements</h3>
+  <p>{{ course.formElements.join(', ') }}</p>
+
+  <h3>Media Elements</h3>
+  <p>{{ course.mediaElements.join(', ') }}</p>
+
+  <h3>Document Structure</h3>
+  <pre>{{ course.structure.doctype }}</pre>
+  <pre>{{ course.structure.basicStructure }}</pre>
+
+  <h3>Contents</h3>
+  <p>{{ course.content }}</p>
+  <p>{{ course.content2 }}</p>
+  <p>{{ course.content3 }}</p>
+
+  <h3>Examples</h3>
+  <div *ngFor="let ex of course.examples">
+    <p><strong>{{ ex.tag }}</strong>: {{ ex.description }}</p>
+    <pre>{{ ex.example }}</pre>
+  </div>
+
+  <h3>Best Practices</h3>
+  <ul>
+    <li *ngFor="let tip of course.bestPractices">{{ tip }}</li>
+  </ul>
+
+  <h3>Resources</h3>
+  <ul>
+    <li *ngFor="let r of course.resources">
+      <a [href]="r.url" target="_blank">{{ r.title }}</a>
+    </li>
+  </ul>
+<!-- ============================================= -->
     </div>
   </div>
   <ng-template #loadingOrNotFound>
